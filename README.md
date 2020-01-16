@@ -4,11 +4,23 @@ This docker image builds the orchid server code in the srv-shared dir at https:/
 
 # Usage
 
+## Build
 ```bash
 git clone https://github.com/Gustav-Simonsson/orchid-docker.git
 cd orchid-docker
 docker image build -t orchid:0.1 .
 ```
+## Run
+
+```bash
+docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -i -t orchid:0.1 /bin/bash
+/usr/src/app/orchid/srv-shared/out-lnx/x86_64/orchidd --help
+```
+
+This will print available `orchidd` command line arguments.
+
+# Notes
 
 The build downloads over 7GB of data and can take 20+ minutes to complete.
 
+The argument to `docker run` enables gdb to work inside the container.

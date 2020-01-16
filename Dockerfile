@@ -24,4 +24,8 @@ RUN ln -s `which gold` /usr/local/bin/ld
 
 RUN make -j4 -C srv-shared
 
-RUN /usr/src/app/orchid/srv-shared/out-lnx/x86_64/orchidd
+# enable core dumps
+RUN ulimit -c unlimited
+RUN sysctl kernel.core_pattern
+
+RUN apt install -y gdb
