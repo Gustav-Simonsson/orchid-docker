@@ -10,5 +10,5 @@ cd orchid-docker
 docker image build -t orchid:0.1 .
 ```
 
-The build takes 20-30 minutes and downloads over 7GB of data.
+The build downloads over 7GB of data and can take 20+ minutes to complete.
 
