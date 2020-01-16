@@ -4,8 +4,11 @@ This docker image builds the orchid server code in the srv-shared dir at https:/
 
 # Usage
 
-1. Clone this repo and cd into it.
-2. docker image build -t orchid:0.1 .
+```bash
+git clone https://github.com/Gustav-Simonsson/orchid-docker.git
+cd orchid-docker
+docker image build -t orchid:0.1 .
+```
 
 The build takes 20-30 minutes and downloads over 7GB of data.
 
