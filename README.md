@@ -1,6 +1,6 @@
 # Docker Image for orchid server
 
-This docker image builds the orchid server code in the srv-shared dir at https://github.com/OrchidTechnologies/orchid
+This docker image builds and runs the orchid server code in the srv-shared dir at https://github.com/OrchidTechnologies/orchid
 
 # Usage
 
@@ -22,5 +22,7 @@ This will print available `orchidd` command line arguments.
 # Notes
 
 The build downloads over 7GB of data and can take 20+ minutes to complete.
+
+This image is based on Ubuntu 19.04 which ends support after 2020-01-23.  The image will be updated to Ubuntu 20.04 LTS as soon as it is ready (planned for 2020-04-23).
 
 The argument to `docker run` enables gdb to work inside the container.
