@@ -1,6 +1,6 @@
 # Docker Image for orchid server
 
-This docker image builds and runs the orchid server.  It pulls the code from the srv-shared dir at https://github.com/OrchidTechnologies/orchid
+This docker image builds and runs the Orchid server (Orchid node).  It pulls the code from the srv-shared dir at https://github.com/OrchidTechnologies/orchid
 
 # Usage
 
